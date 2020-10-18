@@ -1,3 +1,6 @@
 {
-    "hello": "你好！这是一个翻译demo。"
+    "hello": "你好！这是一个翻译demo。",
+    "nested":{
+        "content":"第二层内容"
+    }
 }
