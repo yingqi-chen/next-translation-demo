@@ -16,15 +16,16 @@ function Home({t}) {
           {t('hello')}
         </h1>
 
-  <p>{t('navbar.pricing')}</p>
+        <p>{t('nested.content')}</p>
+        <p>{t('secondFile:second')}</p>
 
       </main>
     </div>
   )
 }
 
-// Home.getInitialProps = async () => ({
-//   namespacesRequired: ['common'],
-// })
+Home.getInitialProps = async () => ({
+  namespacesRequired: ['common','secondFile'],
+})
 
 export default withTranslation('common')(Home)
